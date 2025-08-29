@@ -48,7 +48,7 @@ def call(Map config = [:]) {
                 
                 # Set up credentials for push
                 git remote set-url origin https://\${GIT_USERNAME}:\${GIT_PASSWORD}@github.com/akshayaws99/tws-e-commerce-app.git
-                git push origin HEAD:\${GIT_BRANCH}
+                git push origin HEAD:main
             fi
         """
     }
