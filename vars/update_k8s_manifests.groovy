@@ -29,7 +29,7 @@ def call(Map config = [:]) {
             #################################################
             # Update main application image
             #################################################
-            sed -i "s#image: .*easyshop-app:.*#image: akshayaws99/easyshop-app:${imageTag}#g" \
+            sed -i "s#image: .*easyshop-app.*#image: akshayaws99/easyshop-app:${imageTag}#g" \
             ${manifestsPath}/08-easyshop-deployment.yaml
 
 
